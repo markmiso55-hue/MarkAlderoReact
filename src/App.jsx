@@ -5,7 +5,7 @@ export default function App() {
 
   const fetchAPI = async () => {
     try {
-      const res = await fetch("https://markalderonode.onrender.com/api/message")
+      const res = await fetch("/api/message");
 
       const data = await res.json();
       setMsg(data.message);
